@@ -1,6 +1,8 @@
 {
   "name": "framework-app",
   "version": "1.0.0",
+  "repository": {"type": "git",
+    "url": "git://github.com/sielerjunjor/framework-app.git"},
   "description": "BA Microservice in Express",
   "main": "server.js",
   "scripts": {
