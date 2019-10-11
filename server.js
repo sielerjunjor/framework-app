@@ -1,3 +1,4 @@
+const time = new Date();
 const express = require('express');
 const bodyParser = require('body-parser');
 
@@ -21,6 +22,7 @@ mongoose.connect(dbConfig.url, {
     useNewUrlParser: true
 }).then(() =>{
     console.log('Successfully connected');
+    console.log('Start Time', new Date - time, ' ms');
 }).catch(err => {
     console.log('Could not connect');
     process.exit();
